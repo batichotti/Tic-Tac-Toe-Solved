@@ -46,7 +46,7 @@ class TicTacToe:
     def play(self):
         turn = 0
         self.print_game()
-        while turn <= 9:
+        while turn <= 9 and len(self.empty_cells):
             if turn % 2:
                 move = self.input_move("[1, 9]: O -> ")
             else:
